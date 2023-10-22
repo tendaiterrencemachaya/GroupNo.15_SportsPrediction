@@ -1,5 +1,8 @@
 # GroupNo.15_SportsPrediction
   The Python version of our Colab 3.10.12
+
+  link to the video demonstration: 
+  https://drive.google.com/file/d/18Hhzlrv_fIBHGjPx4ytAkqUFC7RBHN79/view?usp=sharing
   
 # FIFA Player Rating Prediction
 
