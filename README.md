@@ -3,7 +3,7 @@
   
 # FIFA Player Rating Prediction
 
-This repository contains a Python notebook for predicting FIFA player ratings using various machine learning models. The dataset used for this project consists of FIFA player data from FIFA 21 (training data) and FIFA 22 (test data). The goal is to train machine learning models that can predict a player's overall rating based on various features.
+This repository contains a Python notebook for predicting FIFA player ratings using an ensembled machine learning model. The dataset used for this project consists of FIFA player data from FIFA 21 (training data) and FIFA 22 (test data). The goal is to train machine learning models that can predict a player's overall rating based on various features.
 
 ## Getting Started
 
@@ -78,8 +78,4 @@ Here are the mean RMSE values and 95% confidence intervals for the best-performi
   - Mean RMSE: 3.7583
   - 95% Confidence Interval: (1.3590, 6.1577)
 
-These metrics provide an assessment of the models' performance in predicting FIFA player ratings. You can choose the model that best fits your specific requirements.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+These metrics provide an assessment of the models' performance in predicting FIFA player ratings. 
