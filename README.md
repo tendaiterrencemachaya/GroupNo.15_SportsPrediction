@@ -81,8 +81,6 @@ Here are the mean RMSE values and 95% confidence intervals for the best-performi
 These metrics provide an assessment of the models' performance in predicting FIFA player ratings.   
 
 
-```markdown
-
 The other two components of the project:
 
 1. A web application built using Flask, which functions as the user interface for user input and predictions.
@@ -101,5 +99,4 @@ Before getting started with the project, please ensure you have the following so
 - A pre-trained machine learning model (provided as 'ensemble_model.pkl')
 - The scaler used during model training (provided as 'scaler.pkl')
 
-```
 
