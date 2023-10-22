@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Player Rating Prediction</title>
+    <style>
+        body {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: maroon;
+        }
+
+        form {
+            margin: 10px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            width: 60%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            color: maroon;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid maroon;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: maroon;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #800000;
+        }
+
+        #video-container {
+            margin-top: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Player Rating Prediction</h1>
+    <form method="POST" action="/predict">
+        <label for="movement_reactions">Movement & Reactions:</label>
+        <input type="text" name="movement_reactions" required><br>
+
+        <label for="mentality_composure">Mentality & Composure:</label>
+        <input type="text" name="mentality_composure" required><br>
+
+        <label for="passing">Passing:</label>
+        <input type="text" name="passing" required><br>
+
+        <label for="potential">Potential:</label>
+        <input type="text" name="potential" required><br>
+
+        <label for="release_clause_eur">Release Clause (EUR):</label>
+        <input type="text" name="release_clause_eur" required><br>
+
+        <label for="dribbling">Dribbling:</label>
+        <input type="text" name="dribbling" required><br>
+
+        <label for="wage_eur">Wage (EUR):</label>
+        <input type="text" name="wage_eur" required><br>
+
+        <label for="power_shot_power">Power & Shot Power:</label>
+        <input type="text" name="power_shot_power" required><br>
+
+        <label for="value_eur">Value (EUR):</label>
+        <input type="text" name="value_eur" required><br>
+
+        <label for="lcm">Left Central Midfielder:</label>
+        <input type="text" name="lcm" required><br>
+
+        <label for="cm">Central Midfielder:</label>
+        <input type="text" name="cm" required><br>
+
+        <label for="rcm">Right Central Midfielder:</label>
+        <input type="text" name="rcm" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+    {% if prediction %}
+        <h2>Prediction:</h2>
+        <p>Player Rating: {{ prediction }}</p>
+        <p>Confidence Interval: {{ confidence_interval }}</p>
+        <p>Player Rating Prediction Confidence level: {{ confidence_level }} %</p>
+    {% endif %}
+    </div>
+</body>
+</html>
