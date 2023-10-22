@@ -78,4 +78,28 @@ Here are the mean RMSE values and 95% confidence intervals for the best-performi
   - Mean RMSE: 3.7583
   - 95% Confidence Interval: (1.3590, 6.1577)
 
-These metrics provide an assessment of the models' performance in predicting FIFA player ratings. 
+These metrics provide an assessment of the models' performance in predicting FIFA player ratings.   
+
+
+```markdown
+
+The other two components of the project:
+
+1. A web application built using Flask, which functions as the user interface for user input and predictions.
+2. A pre-trained machine learning model that predicts player ratings based on user-provided input.
+
+## Requirements
+
+Before getting started with the project, please ensure you have the following software and resources installed on your system:
+
+- Python 3.x
+- Flask
+- Pandas
+- Scikit-Learn
+- Joblib (used for model and scaler loading)
+- HTML (for the website template)
+- A pre-trained machine learning model (provided as 'ensemble_model.pkl')
+- The scaler used during model training (provided as 'scaler.pkl')
+
+```
+
